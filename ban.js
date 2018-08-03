@@ -46,7 +46,7 @@ exports.run = async (client, message, args) => {
           .setAuthor("Error!")
           .setDescription("Sent by **" + user.username + "**!\n" + `${e}`)
           .setTimestamp();
-        message.chanel.send(eee);
+        message.channel.send(eee);
       }
     }
 
