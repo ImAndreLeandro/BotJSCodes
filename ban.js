@@ -44,7 +44,7 @@ exports.run = async (client, message, args) => {
         let eee = new Discord.RichEmbed()
           .setColor([54, 57, 64])
           .setAuthor("Error!")
-          .setDescription("Sent by **" + author + "**!\n" + `${e}`)
+          .setDescription("Sent by **" + user.username + "**!\n" + `${e}`)
           .setTimestamp();
         message.chanel.send(eee);
       }
