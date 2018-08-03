@@ -8,7 +8,7 @@ client.on("guildMemberAdd", async member => {
   });
 });
 
-client.on("guildMemberRemove", () => {
+client.on("guildMemberRemove", async member => {
   client.channels.get(CHANNEL_PARA_EDITAR).edit({
     name: `Members: ${member.guild.members.size}`
   });
